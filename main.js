@@ -1,7 +1,3 @@
-// 6. Arrey ichidagi objectlarni id ga ko’ra malumotlarini chiqaruvchi function 
-// 7. String holda raqamlar beriladi va uni teskari arrayga aylantiruvchi funksiya tuzing. Misol uchun: "34567" => [7, 6, 5, 4, 3]
-
-
 // TASK 1 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 // 1. **salom dunyo** degan so’zni teskari qilib **oynud molas** qaytaruvchi function yozing Yordam: function, console.log, 
 
@@ -151,3 +147,103 @@
 // TASK 5 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 // 5. Arrey ichidagi juft raqamlarni boshqa bir arrey ga solib qaytaruvchi function yarating 
 
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// const seperateTheEven = (arr) => {
+//     let evenNums = [];
+//     for (i in arr) {
+//         if (arr[i] % 2 == 0) {
+//             evenNums.push(arr[i]);
+//         }
+//     }
+//     return evenNums;
+// }
+
+// console.log(seperateTheEven(arr));
+
+
+
+
+
+
+
+
+
+// TASK 6 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+// 6. Arrey ichidagi objectlarni id ga ko’ra malumotlarini chiqaruvchi function 
+
+// arr = [
+//     {
+//         firstName: 'Abdulaziz',
+//         lastName: 'Ergashev',
+//         age: 18,
+//         nationality: 'Uzbekistan',
+//         id: 19111
+//     },
+//     {
+//         firstname: 'Muhammadjon',
+//         lastName: 'Shavkatov',
+//         age: 18,
+//         nationality: 'Uzbekistan',
+//         id: 17917
+//     }
+// ];
+
+// const takeTheObjectFromId = (arr) => {
+//     let inputId = prompt('User ID kiriting');
+//     let response = 'There is no user with the entered ID';
+//     for (let i = 0; i < arr.length; i++) {
+//         if (inputId == arr[i].id) {
+//             response = arr[i];
+//         }
+//     }
+//     return response;
+// }
+
+// console.log(takeTheObjectFromId(arr));
+
+
+
+
+
+
+
+
+
+// TASK 7 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+// 7. String holda raqamlar beriladi va uni teskari arrayga aylantiruvchi funksiya tuzing.
+// Misol uchun: "34567" => [7, 6, 5, 4, 3]
+
+
+// Using only one functions
+
+// let str = "34567";
+// const reverseIntoArr = (str) => {
+//     let toArr = str.split('').reverse();
+//     let toNum = [];
+//     for (let i = 0; i < toArr.length; i++) {
+//         toNum.push(Number(toArr[i]));
+//     }
+//     return toNum;
+// }
+// console.log(reverseIntoArr(str));
+
+
+
+
+// Using two functions
+
+// let str = "34567";
+// const convertToNum = (toArr) => {
+//     let toNum = [];
+//     for (let i = 0; i < toArr.length; i++) {
+//         toNum.push(Number(toArr[i]));
+//     }
+//     return toNum;
+// }
+
+// const reverseIntoArr = (str) => {
+//     let toArr = str.split('').reverse();
+//     return convertToNum(toArr);
+// }
+// console.log(reverseIntoArr(str));
